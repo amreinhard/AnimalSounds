@@ -12,6 +12,11 @@
 		BF1CCE682043711E006BEE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCE662043711E006BEE6B /* Main.storyboard */; };
 		BF1CCE6A2043711E006BEE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCE692043711E006BEE6B /* Assets.xcassets */; };
 		BF1CCE6D2043711E006BEE6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCE6B2043711E006BEE6B /* LaunchScreen.storyboard */; };
+		BF1CCE7D2043786E006BEE6B /* moo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCE792043786D006BEE6B /* moo.m4a */; };
+		BF1CCE7E2043786E006BEE6B /* woof.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCE7A2043786D006BEE6B /* woof.m4a */; };
+		BF1CCE7F2043786E006BEE6B /* meow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCE7B2043786D006BEE6B /* meow.m4a */; };
+		BF1CCE802043786E006BEE6B /* SimpleSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CCE7C2043786E006BEE6B /* SimpleSound.swift */; };
+		BF1CCE8320437BAA006BEE6B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1CCE8220437BAA006BEE6B /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		BF1CCE692043711E006BEE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF1CCE6C2043711E006BEE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF1CCE6E2043711E006BEE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1CCE792043786D006BEE6B /* moo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = moo.m4a; sourceTree = "<group>"; };
+		BF1CCE7A2043786D006BEE6B /* woof.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = woof.m4a; sourceTree = "<group>"; };
+		BF1CCE7B2043786D006BEE6B /* meow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = meow.m4a; sourceTree = "<group>"; };
+		BF1CCE7C2043786E006BEE6B /* SimpleSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSound.swift; sourceTree = "<group>"; };
+		BF1CCE8220437BAA006BEE6B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1CCE8320437BAA006BEE6B /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				BF1CCE612043711E006BEE6B /* AnimalSounds */,
 				BF1CCE602043711E006BEE6B /* Products */,
+				BF1CCE8120437BA9006BEE6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +68,24 @@
 			children = (
 				BF1CCE622043711E006BEE6B /* AppDelegate.swift */,
 				BF1CCE642043711E006BEE6B /* ViewController.swift */,
+				BF1CCE7C2043786E006BEE6B /* SimpleSound.swift */,
+				BF1CCE7B2043786D006BEE6B /* meow.m4a */,
+				BF1CCE792043786D006BEE6B /* moo.m4a */,
+				BF1CCE7A2043786D006BEE6B /* woof.m4a */,
 				BF1CCE662043711E006BEE6B /* Main.storyboard */,
 				BF1CCE692043711E006BEE6B /* Assets.xcassets */,
 				BF1CCE6B2043711E006BEE6B /* LaunchScreen.storyboard */,
 				BF1CCE6E2043711E006BEE6B /* Info.plist */,
 			);
 			path = AnimalSounds;
+			sourceTree = "<group>";
+		};
+		BF1CCE8120437BA9006BEE6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF1CCE8220437BAA006BEE6B /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +149,9 @@
 			files = (
 				BF1CCE6D2043711E006BEE6B /* LaunchScreen.storyboard in Resources */,
 				BF1CCE6A2043711E006BEE6B /* Assets.xcassets in Resources */,
+				BF1CCE7D2043786E006BEE6B /* moo.m4a in Resources */,
+				BF1CCE7E2043786E006BEE6B /* woof.m4a in Resources */,
+				BF1CCE7F2043786E006BEE6B /* meow.m4a in Resources */,
 				BF1CCE682043711E006BEE6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1CCE802043786E006BEE6B /* SimpleSound.swift in Sources */,
 				BF1CCE652043711E006BEE6B /* ViewController.swift in Sources */,
 				BF1CCE632043711E006BEE6B /* AppDelegate.swift in Sources */,
 			);
